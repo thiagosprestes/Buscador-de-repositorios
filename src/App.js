@@ -12,7 +12,7 @@ function App() {
   const [ notFound, setNotFound] = useState('')
 
   async function handleSubmitSearch(data) {
-    api.get(`/search/repositories?q=${data}&per_page=2`)
+    api.get(`${data.searchTerm}&per_page=4&order=desc&sort=${data.sort}`)
     .then(response => {
       setResults(response.data.items)
       

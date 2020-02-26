@@ -12,21 +12,31 @@
     flex-direction: column;
 }
 
-#app form .input-block label {
+#app .input-block label {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: bold;
 }
 
-#app form .input-block input {
+#app .input-block .input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+#app .input-block .input-group input {
     font-size: 14px;
     height: 32px;
+    width: 100%;
     color: #666;
     border: 0;
     border-bottom: 1px solid #EEE;
 }
 
-#app form .input-block button[type=submit] {
+#app .input-block .input-group select {
+    margin-left: 20px;
+}
+
+#app .input-block button[type=submit] {
     margin-top: 10px;
     border: 0;
     border-radius: 2px;
@@ -38,6 +48,6 @@
     transition: background 0.5s;
 }
 
-#app form .input-block button[type=submit]:hover {
+#app .input-block button[type=submit]:hover {
     background-color: #272727;
 }

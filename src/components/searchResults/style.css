@@ -1,8 +1,28 @@
 li {
     list-style: none;
     margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 li:last-child {
     margin-bottom: 0;
+    border-bottom: 0;
+}
+
+li .description {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+li .repository-info {
+    color: #585858;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+li .repository-info .language {
+    margin-right: 10px;
 }
