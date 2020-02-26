@@ -12,6 +12,22 @@
     flex-direction: column;
 }
 
+#app .input-block .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+}
+
+#app .input-block .header select {
+    font-size: 14px;
+    border: 0;
+    border-bottom: 1px solid #EEE;
+    color: #666;
+}
+
 #app .input-block label {
     margin-bottom: 10px;
     font-size: 14px;
@@ -32,8 +48,11 @@
     border-bottom: 1px solid #EEE;
 }
 
-#app .input-block .input-group select {
-    margin-left: 20px;
+#app .input-block .header .sort-options select {
+    margin-left: 10px;
+    color: #666;
+    border: 0;
+    border-bottom: 1px solid #EEE;
 }
 
 #app .input-block button[type=submit] {
