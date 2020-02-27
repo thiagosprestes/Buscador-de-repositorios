@@ -30,6 +30,14 @@ li .repository-info .data {
     flex-direction: row;
 }
 
+@media (max-width: 800px) {
+    li .repository-info .data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+
 li .repository-info .action {
     display: flex;
     flex-direction: row;

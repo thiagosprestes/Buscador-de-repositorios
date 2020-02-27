@@ -1,6 +1,7 @@
 #app {
-    margin: auto;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #app .input-block {
@@ -38,6 +39,17 @@
 #app .input-block .input-group {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    #app .input-block {
+        width: 320px;
+    }
+
+    #app .input-block .input-group {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #app .input-block .input-group input {
