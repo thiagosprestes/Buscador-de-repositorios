@@ -10,6 +10,7 @@
     width: 600px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
 }
 
 #app .input-block .header {
@@ -48,7 +49,7 @@
     border-bottom: 1px solid #EEE;
 }
 
-#app .input-block .header .sort-options select {
+#app .input-block select {
     margin-left: 10px;
     color: #666;
     border: 0;

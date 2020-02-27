@@ -23,6 +23,10 @@ li .repository-info {
     flex-direction: row;
 }
 
+li .repository-info .stars {
+    margin-right: 10px;
+}
+
 li .repository-info .language {
     margin-right: 10px;
 }

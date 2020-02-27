@@ -9,6 +9,9 @@ function SearchResults({ item }) {
             <strong>{item.full_name}</strong>
             <p className="description">{item.description}</p>
             <div className="repository-info">
+                <div className="stars">                    
+                    {item.stargazers_count} stars
+                </div>
                 {item.language !== null && <p className="language">{item.language}</p>}
                 <p className="date">Updated {moment(new Date(item.pushed_at)).format('D MMMM YYYY')}</p>
             </div>
