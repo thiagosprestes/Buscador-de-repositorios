@@ -27,6 +27,10 @@ function App() {
 
   return (
     <div id="app">
+      <div className="welcome-message">
+        Buscador de repositórios
+        <p>Digite um termo relacionado a sua busca, utilize os filtros caso deseje uma busca mais específica.</p>
+      </div>
       <SearchForm onSubmit={handleSubmitSearch} />
 
       {notFound !== '' && results == 0 && (

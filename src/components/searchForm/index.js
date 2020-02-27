@@ -17,7 +17,7 @@ function SearchForm({ onSubmit }) {
         <div className="input-block">
             <label htmlFor="searchTerm">Seu termo de busca</label>
             <div className="input-group">
-                <input type="text" name="searchTerm" id="searchTerm" onKeyUp={handleSubmit} onChange={e => setSearchTerm(e.target.value)} />
+                <input type="text" name="searchTerm" id="searchTerm" onKeyUp={handleSubmit} onChange={e => setSearchTerm(e.target.value)} placeholder="Ex: nome do repositório" />
                 <select name="sort" id="sort" defaultValue="filtrar" onChange={e => setSort(e.target.value)}>
                     <option value="filtrar" disabled>Filtrar por</option>
                     <option value="">Melhores resultados</option>
