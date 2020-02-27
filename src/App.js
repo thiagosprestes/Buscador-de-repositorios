@@ -14,7 +14,7 @@ function App() {
   const [ notFound, setNotFound] = useState('')
 
   async function handleSubmitSearch(data) {
-    api.get(`/repositories?q=${data.searchTerm}&per_page=4&order=${data.order}&sort=${data.sort}`)
+    api.get(`/repositories?q=${data.searchTerm}+language:${data.language}&per_page=4&order=${data.order}&sort=${data.sort}`)
     .then(response => {
       setResults(response.data.items)
       setTotalItems(response.data.total_count)

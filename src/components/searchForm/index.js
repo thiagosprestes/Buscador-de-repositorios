@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 function SearchForm({ onSubmit }) {
     const [ searchTerm, setSearchTerm ] = useState('')
+    const [ language, setLanguage ] = useState('')
     const [ sort, setSort ] = useState('')
     const [ order, setOrder ] = useState('desc')
 
     async function handleSubmit() {
-        await onSubmit({searchTerm, sort, order})
+        await onSubmit({searchTerm, language, sort, order})
     }
 
     useEffect(() => {
@@ -15,9 +16,9 @@ function SearchForm({ onSubmit }) {
 
     return (
         <div className="input-block">
-            <label htmlFor="searchTerm">Seu termo de busca</label>
             <div className="input-group">
-                <input type="text" name="searchTerm" id="searchTerm" onKeyUp={handleSubmit} onChange={e => setSearchTerm(e.target.value)} placeholder="Ex: nome do repositório" />
+                <input type="text" name="searchTerm" id="searchTerm" onKeyUp={handleSubmit} onChange={e => setSearchTerm(e.target.value)} placeholder="Nome do repositório" />
+                <input type="text" name="searchTerm" id="searchTerm" onKeyUp={handleSubmit} onChange={e => setLanguage(e.target.value)} placeholder="Linguagem" />
                 <select name="sort" id="sort" defaultValue="filtrar" onChange={e => setSort(e.target.value)}>
                     <option value="filtrar" disabled>Filtrar por</option>
                     <option value="">Melhores resultados</option>
