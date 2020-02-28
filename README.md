@@ -1,4 +1,4 @@
-![Alt text](/buscador-de-repositorios-github-1.jpg)
+![Buscador de repositorios do github em react](/buscador-de-repositorios-github-screenshot.jpg)
 
 # Buscador de repositórios do Github
 
