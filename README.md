@@ -6,6 +6,8 @@
 
 Projeto baseado em um vídeo com sugestões de projetos do desenvolvedor Filipe Deschamps. O intuíto aqui é construir uma aplicação web que utiliza a API do Github como base para exibir informações dos repositórios.   
 
+Link do vídeo: https://youtu.be/fYR9L2ZmodM
+
 # Funcionalidades
 
 * Filtrar repositórios do Github de acordo com palavras chave, linguagem e data de atualização.
