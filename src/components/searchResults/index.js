@@ -17,7 +17,7 @@ function SearchResults({ item }) {
                     <p className="date">Updated {moment(new Date(item.pushed_at)).format('D MMMM YYYY')}</p>
                 </div>
                 <div className="action">
-                    <a href={item.html_url} target="_blank">Ver no Github</a>
+                    <a href={item.html_url} target="_blank" rel="noopener noreferrer">Ver no Github</a>
                 </div>
             </div>
         </li>

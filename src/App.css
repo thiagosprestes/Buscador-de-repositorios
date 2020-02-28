@@ -52,7 +52,7 @@
     flex-direction: row;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     #app .welcome-message p {
         width: 320px;
     }
@@ -64,6 +64,10 @@
     #app .input-block .input-group {
         display: flex;
         flex-direction: column;
+    }
+
+    #app .pagination {
+        width: 100%;
     }
 }
 
@@ -97,4 +101,51 @@
 
 #app .input-block button[type=submit]:hover {
     background-color: #272727;
+}
+
+#app .pagination {
+    margin: 20px 0 50px 0;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+}
+
+#app .pagination .pagination-item {
+    padding: 15px;
+    margin: 0;
+}
+
+#app .pagination .active {
+    background-color: #000;
+    color: #FFF;
+}
+
+#app .pagination .active:hover {
+    background-color: #000;
+}
+
+#app .pagination .active a {
+    color: #FFF;
+}
+
+#app .pagination li {
+    margin-bottom: 0;
+    border: 0;
+    border-right: 1px solid #CCC;
+}
+
+#app .pagination .pagination-last-item {
+    border: 0;
+}
+
+#app .pagination li:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+#app .pagination li a {
+    text-decoration: none;
+    color: #000;
 }
