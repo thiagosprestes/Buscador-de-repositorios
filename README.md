@@ -4,7 +4,7 @@
 
 # Sobre este projeto
 
-Projeto baseado em um vídeo com sugestões de projetos do desenvolvedor Filipe Deschamps. O intuíto aqui é construir uma aplicação web que utiliza a API do Github como base para exibir informações dos repositórios.   
+Projeto baseado em um vídeo com sugestões de projetos do desenvolvedor Filipe Deschamps. O intuito aqui é construir uma aplicação web que utiliza a API do Github como base para exibir informações dos repositórios.   
 
 Link do vídeo: https://youtu.be/fYR9L2ZmodM
 
